@@ -79,7 +79,8 @@ body {
   justify-content: space-between;
   padding: 24px;
   /* 214px -> image */
-  height: calc(100% - 214px);
+  /*height: calc(100% - 214px);*/
+  height: 268px;
 }
 
 .item-card__title {
@@ -126,4 +127,161 @@ body {
   background: #4E4E4E;
   border: 2px solid #4E4E4E;
   cursor: no-drop;
+}
+
+@media(max-width: 1200px) {
+  .title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .main__title {
+    margin: 30px 0;
+  }
+
+  .items-container {
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .item-card {
+    width: 30vw;
+    height: auto;
+  }
+
+  .label {
+    padding: 0 14px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .item-card__title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .item-card__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .item-card__button {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media(max-width: 900px) {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .main__title {
+    margin: 20px 0;
+  }
+
+  .item-card__labels-container {
+    top: 10px;
+    left: 10px;
+    gap: 10px;
+  }
+
+  .label {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .item-card__info {
+    padding: 15px;
+  }
+
+  .item-card__description {
+    line-height: 18px;
+  }
+}
+
+@media(max-width: 767px) {
+  .items-container {
+    flex-wrap: wrap;
+  }
+
+  .item-card {
+    width: 43vw;
+  }
+
+  .item-card__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media(max-width: 600px) {
+  .item-card__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media(max-width: 470px) {
+  .label {
+    padding: 0 8px;
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .item-card__info {
+    height: 240px;
+    padding: 10px;
+  }
+
+  .item-card__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .item-card__description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .item-card__button {
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media(max-width: 375px) {
+  .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .items-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .label {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .item-card {
+    width: 90%;
+  }
+  
+  .item-card__info {
+    height: auto;
+  }
+
+  .item-card__button {
+    margin-top: 20px;
+  }
 }

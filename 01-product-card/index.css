@@ -1,1 +1,129 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main__title {
+  margin: 40px 0;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1180px;
+}
+
+.main__items-container {
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.item-card {
+  position: relative;
+  height: 482px;
+  max-width: 380px;
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.item-card__labels-container {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.label {
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  border-radius: 8px;
+}
+
+.label_new {
+  background: #FDCFF3;
+}
+
+.label_last {
+  background: #FFCF56;
+}
+
+.item-card__image {
+  max-height: 214px;
+  width: 100%;
+}
+
+.item-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  /* 214px -> image */
+  height: calc(100% - 214px);
+}
+
+.item-card__title {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2F2F2F;
+}
+
+.item-card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.item-card__button {
+  width: 100%;
+  padding: 11.5px 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #42940F;
+  background-color: transparent;
+  border: 2px solid #42940F;
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.item-card__button:not(.item-card__button_disabled):hover {
+  color: #fff;
+  background: #42940F;
+}
+
+.item-card__button:not(.item-card__button_disabled):active {
+  background: #1F5200;
+  border: 2px solid #1F5200;
+}
+
+.item-card__button_disabled {
+  color: #fff;
+  background: #4E4E4E;
+  border: 2px solid #4E4E4E;
+  cursor: no-drop;
+}

@@ -11,6 +11,51 @@
 <body>
 <main>
 <!-- Напиши разметку на этом месте и больше ничего не трогай -->
+    <!-- 
+        предполагается класс main у тега main, трогать страшно :( 
+        использовала main__title и main__items-container для указания внешних отступов
+    -->
+    <h1 class="title main__title">Товары недели</h1> 
+    <div class="items-container main__items-container">
+        <div class="item-card">
+            <div class="item-card__labels-container">
+                <div class="label label_new">
+                    <span>Новинка</span>
+                </div>
+                <div class="label label_last">
+                    <span>Последний</span>
+                </div>
+            </div>
+            <img src="img/item-image.jpg" alt="item image" class="item-card__image">
+            <div class="item-card__info">
+                <div class="item-card__text">
+                    <h3 class="item-card__title">Апельсиновый сок</h3>
+                    <p class="item-card__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая.</p>
+                </div>
+                <button class="item-card__button">В корзину</button>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="img/item-image.jpg" alt="item image" class="item-card__image">
+            <div class="item-card__info">
+                <div class="item-card__text">
+                    <h3 class="item-card__title">Апельсиновый сок</h3>
+                    <p class="item-card__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая. Ну что сказать? Ну что сказать? Устроены так длинные описания.</p>
+                </div>
+                <button class="item-card__button">В корзину</button>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="img/item-image.jpg" alt="item image" class="item-card__image">
+            <div class="item-card__info">
+                <div class="item-card__text">
+                    <h3 class="item-card__title">Апельсиновый сок</h3>
+                    <p class="item-card__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая.</p>
+                </div>
+                <button class="item-card__button item-card__button_disabled">Закончилось</button>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>

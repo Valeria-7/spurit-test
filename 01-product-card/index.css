@@ -1,5 +1,3 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
-
 * {
   margin: 0;
   padding: 0;
@@ -78,8 +76,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
-  /* 214px -> image */
-  /*height: calc(100% - 214px);*/
   height: 268px;
 }
 
